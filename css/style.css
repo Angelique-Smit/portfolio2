@@ -1,0 +1,113 @@
+/*Main body parts.*/
+    body {
+        margin: 0;
+        background-color:#57585f;
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100vw;
+        height: 6.5vh;
+        background-color: #35363A;
+    }
+
+    header {
+        width: 100vw;
+        height: 35vh;
+    }
+
+    main {
+        width: 80vw;
+        height: 80vh;
+    }
+/*Nav bar*/
+/*Parent containing the children with information. Is a flex box.*/
+    .nav_bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name {
+        flex: 1;
+        padding-top: 1vh;
+        padding-left: 10vh;
+        color: #ebebf1;
+    }
+
+    .links {
+        display: flex;
+        flex: 2;
+        padding-top: 2vh;
+        align-content: center;
+        justify-content: space-evenly;
+}
+
+/*Header*/
+/*Slideshow header made by Dzmitry on codepen.io, editted by chat gpt*/
+    #slideshow {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        height: 45vh;
+        width: 700vw; /* set the width to 700vw to accommodate all slides */
+        margin: 0 auto;
+        animation: slide 70s linear infinite;
+    }
+
+    .slide {
+        float: left;
+        height: 334vh;
+        width: 100vw;
+    }
+
+    .slide:nth-child(1) {
+        background-image: url('https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=85,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png');
+        max-height: 45vh;
+        max-width: 100vw;
+    }
+
+    .slide:nth-child(2) {
+        background-image: url('https://img.freepik.com/free-vector/flat-design-colored-portfolio-template_23-2149215470.jpg');
+        max-height: 45vh;
+        max-width: 100vw;
+    }
+
+    .slide:nth-child(3) {
+        background-image: url('https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=85,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png');
+        max-height: 45vh;
+        max-width: 100vw;
+    }
+
+    .slide:nth-child(4) {
+        background-image: url("https://img.freepik.com/free-vector/flat-design-colored-portfolio-template_23-2149215470.jpg");
+        max-height: 45vh;
+        max-width: 100vw;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* start at slide 1 */
+        }
+        14.28% {
+            transform: translateX(-100vw); /* move to slide 2 */
+        }
+        28.57% {
+            transform: translateX(-200vw); /* move to slide 3 */
+        }
+        100% {
+            transform: translateX(0); /* loop back to slide 1 */
+        }
+    }
+
+/*Main*/
+
+/*Links*/
+    a {
+        color: #ebebf1;
+        font-size: 1.2em;
+    }
+/*Text*/
+    h1 {
+        margin: 0;
+        font-size: 2em;
+    }
